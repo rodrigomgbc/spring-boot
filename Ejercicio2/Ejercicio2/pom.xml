@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>Ejercicio1</artifactId>
+    <artifactId>Ejercicio2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Ejercicio1</name>
-    <description>Ejercicio1</description>
+    <name>Ejercicio2</name>
+    <description>Ejercicio2</description>
     <url/>
     <licenses>
         <license/>
@@ -28,8 +28,6 @@
     </scm>
     <properties>
         <java.version>17</java.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
