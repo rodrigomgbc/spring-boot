@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class ProcesoB implements CommandLineRunner {
     private MessageService messageService;
 
-    public ProcesoB(@Qualifier("systemErrMessageService") MessageService messageService) {
+    public ProcesoB(@Qualifier("systemOurMessageService") MessageService messageService) {
         this.messageService = messageService;
     }
 
