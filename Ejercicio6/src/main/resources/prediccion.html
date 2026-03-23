@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Prediccion Tiempo</title>
+    <style>
+        .verde { background-color: green; }
+        .naranja { background-color: orange; }
+        .rojo { background-color: red; }
+    </style>
 </head>
 <body>
     <h1>Predicción meteorológica</h1>
@@ -25,7 +30,7 @@
         </tr>
         <tr>
             <th>Nivel UV</th>
-            <td th:each="dia : ${dias}" th:text="${dia.nivelUV}"></td>
+            <td th:each="dia : ${dias}" th:text="${dia.nivelUV}" th:class="${dia.nivelUV <= 1 ? 'verde' : (dia.nivelUV <= 3 ? 'naranja' : 'rojo')}"></td>
         </tr>
     </table>
 </body>
