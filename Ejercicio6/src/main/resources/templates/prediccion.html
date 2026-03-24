@@ -32,6 +32,14 @@
             <th>Nivel UV</th>
             <td th:each="dia : ${dias}" th:text="${dia.nivelUV}" th:class="${dia.nivelUV <= 1 ? 'verde' : (dia.nivelUV <= 3 ? 'naranja' : 'rojo')}"></td>
         </tr>
+        <tr>
+            <th>Estado</th>
+            <td th:each="dia : ${dias}">
+                <img th:src="${dia.probabilidadPrecipitacion < 25
+                    ? 'https://www.aemet.es/imagenes/png/estado_cielo/11_g.png' : (dia.probabilidadPrecipitacion < 50
+                    ? 'https://www.aemet.es/imagenes/png/estado_cielo/12_g.png' : (dia.probabilidadPrecipitacion < 75 ? 'https://www.aemet.es/imagenes/png/estado_cielo/14_g.png' : 'https://www.aemet.es/imagenes/png/estado_cielo/25_g.png'))}">
+            </td>
+        </tr>
     </table>
 </body>
 </html>
